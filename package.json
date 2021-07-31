@@ -1,25 +1,37 @@
 {
-  "name": "websaw2021",
+  "name": "saw_0",
   "version": "1.0.0",
-  "description": "Proyecto MTI SAW 2021",
-  "main": "app.js",
+  "description": "Node.js example skeleton",
+  "main": "server.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "start": "nodemon server.js",
+    "start:watch": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mahumada1/MTISAW2021.git"
-  },
-  "author": "Mahumada",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mahumada1/MTISAW2021/issues"
-  },
-  "homepage": "https://github.com/mahumada1/MTISAW2021#readme",
   "dependencies": {
     "blueimp-md5": "^2.18.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mongodb": "^4.0.0",
     "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.12",
     "wikidata-sdk": "^7.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^26.6.3",
+    "supertest": "^6.0.1"
   }
 }
